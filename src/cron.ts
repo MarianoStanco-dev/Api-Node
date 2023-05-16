@@ -12,7 +12,6 @@ const sources = [
 ];
 
 async function run() {
-  console.log("archivo cron run");
   const tasks = sources.map((source) => axios.get(source.url));
   const results = await Promise.allSettled(tasks);
   results.forEach((result) => {
