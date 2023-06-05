@@ -17,7 +17,7 @@ const connSato = new Sequelize("sato", config.db_user, config.db_pass, {
 // puede ser operacion destructiva de las tablas, usar solo en desarrollo
 //force: true
 // alter:true
-connSato.sync({ force: false });
+connSato.sync({ alter: false });
 
 // Testear conexion a la base
 
