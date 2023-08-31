@@ -16,7 +16,7 @@ app.use("/sato", satoRouter);
 app.use("/inventory", inventoryRouter);
 
 // conexion base de datos
-connSato;
+//connSato;
 
 var task = cron.schedule("* * * * *", () => {
   console.log("Cron cada un minuto");

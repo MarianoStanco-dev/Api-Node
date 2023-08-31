@@ -1,0 +1,12 @@
+{
+    "apps":[
+       {
+        "name": "api-nodejs",
+        "script": "dist/index.js",
+        "instances": "max",
+        "autostart": true,
+        "watch": false,
+        "time": true 
+       }
+    ]
+}
